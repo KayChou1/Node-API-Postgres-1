@@ -9,7 +9,7 @@ const pool = new Pool({
 
 const getPeople = (request, response) => {
     pool.query('SELECT * FROM people ORDER BY id ASC', (error, results) => {
-      if (error) {
+      if (error, results) {
         throw error
       }
       response.status(200).json(results.rows)

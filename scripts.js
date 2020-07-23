@@ -59,7 +59,7 @@ function removeLast(){
 }
 
 function updatePage(){
-
+    container.textContext = "";
     fetch(url)
     .then(res => res.json())
     .then(res => {
